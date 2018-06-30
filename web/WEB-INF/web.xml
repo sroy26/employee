@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>MyServlet.MyLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/MyServlet/MyLogin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Menu</servlet-name>
+        <servlet-class>MyServlet.Menu</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Menu</servlet-name>
+        <url-pattern>/MyServlet/Menu</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>New_Reg</servlet-name>
+        <servlet-class>MyServlet.New_Reg</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>New_Reg</servlet-name>
+        <url-pattern>/MyServlet/New_Reg</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>MyServlet.Logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/MyServlet/Logout</url-pattern>
+    </servlet-mapping>
+    
+    <welcome-file-list>
+        <welcome-file>
+            index.html
+        </welcome-file>
+    </welcome-file-list>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
